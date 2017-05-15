@@ -1,13 +1,6 @@
 <?php include('cabeza.php');?>
 <section>
-<?php
-$datos = array_map('str_getcsv', file('portafolio-academico.csv'));
-// pero debo hacer un pequeño ajuste, para eliminar del arreglo el encabezado del imdb-movies.csv
-array_walk($datos, function(&$a) use ($datos) {$a = array_combine($datos[0], $a);});
-array_shift($datos);
-?>
-<h2>Sobre el proyecto</h2>
-<p>Acá peguen sus about</p>
-
+<h2>Configuración de la memoria colectiva: Juguetes como posibilidad de recuerdo 1960-1973</h2>
+<p>Plantea la posibilidad de reconstrucción de la memoria colectiva por medio del vinculo y connotación personal de sujeto con el juguete, a raiz de ello, estudiamos la prodcucción nacional de juguetes en determinado contexto social-industrial.</p>
 </section>
 <?php include('pie.php');?>
